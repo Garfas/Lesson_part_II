@@ -52,23 +52,23 @@
 
 
 class Smoothie:
-    def __init__(self, ingredients):
+    def __init__(self, ingredients : list[dict]):
         self.ingredients = ingredients
 
-    def get_cost(self):
+    def get_cost(self) -> float:
         cost = 0
         for ingredient in self.ingredients:
             cost += ingredient["cost"]
         return cost
     
 
-    def get_price(self):
+    def get_price(self) -> float:
         cost = self.get_cost()
         price = cost + (cost * 1.5)
         
         return round(price, 2)
     
-    def get_name(self):
+    def get_name(self) -> str:
         ingredient_list = [ingredient["name"].replace("berries" , "berry") for ingredient in self.ingredients]
         ingredient_list.sort()
         if len(ingredient_list) > 1:
@@ -79,7 +79,7 @@ class Smoothie:
         
 
 class BananaBerrySmoothie(Smoothie):
-    def __init__(self):
+    def __init__(self) -> None:
         ingredients = [
             {"name" : "banana", "cost" : 0.5},
             {"name" : "strawberries-berries", "cost" : 0.75},
@@ -91,7 +91,7 @@ class BananaBerrySmoothie(Smoothie):
 
 
 class MangoPinapleSmoothie(Smoothie):
-    def __init__(self):
+    def __init__(self) -> None:
         ingredients = [
             {"name" : "mango", "cost" : 1.0},
             {"name" : "pineaple", "cost" : 0.45},
