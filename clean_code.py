@@ -1,3 +1,5 @@
+# 2023_03_14
+
 # Task Nr.1: Fix these coding examples according to the standards we learnt during this lecture:
 # class Person():
 #     def __init__(self, name: str, surname: str) -> None:
@@ -33,23 +35,24 @@
 # print(greet_user)
 
 
-# Write a python function that takes in one parameter - integer and then returns True if number is magic number
+# Write a python function that takes in one parameter - integer and then
+# returns True if number is magic number
 # or False if it is not a magic number
 
 
-def is_magic_number(num: int) -> bool:
-    while num > 9:
-        sum_of_digits = 0
-        for digit in str(num):
-            sum_of_digits += int(digit)
-        num = sum_of_digits
-    return num == 1
+# def is_magic_number(num: int) -> bool:
+#     while num > 9:
+#         sum_of_digits = 0
+#         for digit in str(num):
+#             sum_of_digits += int(digit)
+#         num = sum_of_digits
+#     return num == 1
 
 
-print(is_magic_number(46))
-print(is_magic_number(17))
-print(is_magic_number(91))
-print(is_magic_number(179))
-print(is_magic_number(7))
-print(is_magic_number(123456789))
-print(is_magic_number(1234))
+# print(is_magic_number(46))
+# print(is_magic_number(17))
+# print(is_magic_number(91))
+# print(is_magic_number(179))
+# print(is_magic_number(7))
+# print(is_magic_number(123456789))
+# print(is_magic_number(1234))
