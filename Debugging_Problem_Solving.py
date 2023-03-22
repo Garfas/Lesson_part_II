@@ -1,5 +1,5 @@
 # 2023_03_21
-
+#Jam priklauso failas .env
 import sys
 
 total = 0
