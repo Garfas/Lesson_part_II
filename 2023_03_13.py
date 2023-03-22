@@ -52,7 +52,7 @@
 
 
 class Smoothie:
-    def __init__(self, ingredients : list[dict]):
+    def __init__(self, ingredients):
         self.ingredients = ingredients
 
     def get_cost(self) -> float:
