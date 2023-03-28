@@ -1,2 +1,4 @@
 .pylintrc
 .env
+launch.json
+settings.json
