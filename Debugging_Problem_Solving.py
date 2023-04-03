@@ -1,16 +1,16 @@
-# 2023_03_21
-#Jam priklauso failas .env
-import sys
+# # 2023_03_21
 
-total = 0
+# import sys
 
-for arg in sys.argv[1:]:
-    try:
-        num = float(arg)
-        total += num
+# total = 0
 
-    except ValueError:
-        print("Error: invalid argument '{}'".format(arg))
-        sys.exit(1)
+# for arg in sys.argv[1:]:
+#     try:
+#         num = float(arg)
+#         total += num
 
-print("Total: {}".format(total))
+#     except ValueError:
+#         print("Error: invalid argument '{}'".format(arg))
+#         sys.exit(1)
+
+# print("Total: {}".format(total))

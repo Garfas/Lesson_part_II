@@ -13,30 +13,30 @@
 #      p1.taste("cheese") ➞ "Sam eats the cheese!"
 #      p1.taste("carrots") ➞ "Sam eats the carrots and hates it!"
 
-# from typing import List
+from typing import List
 
-# class Person:
-#     def __init__(self, name : str, likes : List[str], hates : List[str]):
-#         self.name = name
-#         self.likes = likes
-#         self.hates = hates
+class Person:
+    def __init__(self, name : str, likes : List[str], hates : List[str]):
+        self.name = name
+        self.likes = likes
+        self.hates = hates
 
 
-#     def taste(self, food : str) -> str:
-#         if food in self.likes:
-#             return f'{self.name} eats the {food} and loves it.'
+    def taste(self, food : str) -> str:
+        if food in self.likes:
+            return f'{self.name} eats the {food} and loves it.'
         
-#         elif food in self.hates:
-#             return f'{self.name} eats the {food} and hates it !'
+        elif food in self.hates:
+            return f'{self.name} eats the {food} and hates it !'
         
-#         else:
-#             return f'{self.name} eats the {food} !'
+        else:
+            return f'{self.name} eats the {food} !'
 
-# p1 = Person('Sam', ['ice cream'], ['carrot'])
+p1 = Person('Sam', ['ice cream'], ['carrot'])
 
-# print(p1.taste('ice cream'))
-# print(p1.taste('cheese'))
-# print(p1.taste('carrots'))
+print(p1.taste('ice cream'))
+print(p1.taste('cheese'))
+print(p1.taste('carrots'))
             
 #////////////////////////////////
 
