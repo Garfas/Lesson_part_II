@@ -82,18 +82,4 @@
 
     
     
-# 2023 04 03
-
-# class Calc:
-#     MY_NUMBER = 2
-#     def __init__(self, nr: int ):
-#         self.MY_NUMBER+= nr
-        
-# calc_one = Calc(nr=3)
-# print(calc_one.MY_NUMBER)
-
-# cal_two = Calc(nr=5)
-# print(cal_two.MY_NUMBER)
-
-
 
